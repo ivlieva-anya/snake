@@ -22,5 +22,6 @@ namespace ConsoleApp1
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
         }
+
     }
 }
