@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class HoriczontalLine
+    {
+        List<Point> pList;
+        public HoriczontalLine(int xLeft, int xRight, int y, char sym)
+        {
+            pList = new List<Point>();
+            for(int x = xLeft; x<= xRight; x++)
+            {
+                Point p = new Point(x, y, sym);
+                pList.Add(p);
+            }
+        }
+         public void Drow()
+        {
+            foreach(Point p in pList)
+            {
+                p.Draw();
+            }
+        }
+    }
+}
