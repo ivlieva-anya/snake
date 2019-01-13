@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class HoriczontalLine
+    class HoriczontalLine: Figure
     {
         List<Point> pList;
         public HoriczontalLine(int xLeft, int xRight, int y, char sym)
